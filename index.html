@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teslink Tesla API Registration</title>
+    <script>
+        // Check if this is a Tesla public key request
+        if (window.location.pathname === '/.well-known/appspecific/com.tesla.3p.public-key.pem') {
+            // Serve the public key content directly
+            document.write('-----BEGIN PUBLIC KEY-----<br>');
+            document.write('MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAED60eKY2+CSvJpdpqvrfWYZdvuhEK<br>');
+            document.write('1LClz9HqV5e2MLjhqDKYx9bl1tXBbTbVVJn8tnGAt1odrO5+SgcjWRhbMQ==<br>');
+            document.write('-----END PUBLIC KEY-----');
+        }
+    </script>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
