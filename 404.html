@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Redirecting...</title>
     <script>
         // Check if this is a Tesla public key request
         if (window.location.pathname === '/.well-known/appspecific/com.tesla.3p.public-key.pem') {
-            // Redirect to the actual public key file
-            window.location.href = '/public-key.pem';
+            // Redirect to the Tesla key file
+            window.location.href = '/tesla-key.html';
         } else {
             // For other 404s, redirect to main page
             window.location.href = '/';
         }
     </script>
 </head>
+
 <body>
     <p>Redirecting...</p>
 </body>
-</html> 
+
+</html>
