@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teslink Tesla API Registration</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .status {
+            background: #e8f5e8;
+            border: 1px solid #4caf50;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .info {
+            background: #f5f5f5;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .code {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+
+        .success {
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+        .warning {
+            color: #ff9800;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>🔑 Teslink Tesla API Registration</h1>
+        <p>Domain: <strong>definest.site</strong></p>
+    </div>
+
+    <div class="status">
+        <h2>✅ Public Key Successfully Hosted</h2>
+        <p>Your Tesla public key is now accessible at the required URL for Fleet API registration.</p>
+    </div>
+
+    <div class="info">
+        <h3>📋 Registration Details</h3>
+        <p><strong>Domain:</strong> definest.site</p>
+        <p><strong>Public Key URL:</strong> <a href="/.well-known/appspecific/com.tesla.3p.public-key.pem"
+                target="_blank">https://definest.site/.well-known/appspecific/com.tesla.3p.public-key.pem</a></p>
+        <p><strong>Status:</strong> <span class="success">Ready for Tesla registration</span></p>
+    </div>
+
+    <div class="info">
+        <h3>🔧 Next Steps</h3>
+        <ol>
+            <li>Upload these files to your definest.site hosting</li>
+            <li>Ensure the public key is accessible at the Tesla-required path</li>
+            <li>Run the Tesla registration process</li>
+            <li>Test your Flutter app</li>
+        </ol>
+    </div>
+
+    <div class="info">
+        <h3>📊 Public Key Information</h3>
+        <p><strong>Key Type:</strong> ECDSA P-256</p>
+        <p><strong>Purpose:</strong> Tesla Fleet API vehicle command signing</p>
+        <p><strong>Format:</strong> PEM</p>
+    </div>
+
+    <div class="info">
+        <h3>🧪 Test Commands</h3>
+        <p>You can test your public key accessibility with these commands:</p>
+        <div class="code">
+            # Test if public key is accessible
+            curl -I https://definest.site/.well-known/appspecific/com.tesla.3p.public-key.pem
+
+            # Download public key content
+            curl https://definest.site/.well-known/appspecific/com.tesla.3p.public-key.pem
+        </div>
+    </div>
+
+    <div class="info">
+        <h3>🎯 Success Indicators</h3>
+        <ul>
+            <li>✅ Public key accessible via HTTPS</li>
+            <li>✅ Correct file path and naming</li>
+            <li>✅ Valid PEM format</li>
+            <li>✅ Ready for Tesla registration</li>
+        </ul>
+    </div>
+
+    <div class="info">
+        <h3>📝 Tesla Registration Script</h3>
+        <p>The registration script has been updated to use your new domain:</p>
+        <div class="code">
+            domain="definest.site" # Your custom domain
+        </div>
+    </div>
+</body>
+
+</html>
