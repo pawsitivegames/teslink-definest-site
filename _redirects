@@ -1,0 +1,5 @@
+# Redirect Tesla public key to accessible file
+/.well-known/appspecific/com.tesla.3p.public-key.pem /public-key.pem 200
+
+# Ensure .well-known folder is accessible
+/.well-known/* /.well-known/:splat 200 
